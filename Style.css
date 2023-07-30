@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Now';
+    src: url(font/Now-Light.otf) format(otf);
+}
+
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url(font/Montserrat/Montserrat-Medium.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0px;
@@ -7,16 +17,19 @@
 body{
    
     background-color: blue;
+   font-family: 'Montserrat-light';
+ 
     
 }
 
 .container{
     margin: auto;
-    background-color: gray;
+    background-color: white;
     width: 210mm;
     height: 297mm;
     display:grid;
-    grid-template-columns: 35% 65%; /*mistake here must fixx*/
+    grid-template-columns: 40% 60%; /*mistake here must fixx*/
+    
         
 
     /*
@@ -24,86 +37,226 @@ body{
     */
 }
 
-.right-side{
+.left-side{
     background-color: white;
     color: black;
    display: grid;
-   grid-template-rows: auto;
-   
+   grid-template-rows:43% 12% 13% 30%;
+   padding-left: 10%;
+   position: relative;
+
 }
 
-/* .the-design{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
+.the-design{
+    height: 180px;
+    width: 180px;
+    background:#27384c;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
 
-} */
-
-.Profile{
-    width: 220px;
-    height: 220px;
-    border: 4px solid green;
+.Profile-Pic{
+    width: 250px;
+    height: 250px;
+    border: 4px solid #27384c;
     border-radius: 50%;
     background-image: url("ProfilePic.png");
     background-position: center top;
     background-size: 100%;
-    margin: 20px;
-   
+    z-index: 1;
+   box-shadow: 0 0 0 10px white;
+   margin-top: 23%;
+   margin-left: 10%;
 }
 
-/* .the-box{
-    margin-top: 70px ;
-} */
-
-
-.titles{
+.About-me{
     text-align: center;
-    background-color: rgb(0, 250, 100);
+    padding: 0px 20px;
+    margin-top: 5px; 
+
+}
+
+.About-me-text{
+    font-size: 9.9pt;
+    padding: 0px 15px;
+}
+
+.headTitles{
+    
+    font-size: 15.4pt;
+    padding: 10px;
+    font-weight: 200;
+    
+}
+
+
+
+
+.left-side .titles{
+    text-align: center;
+    background-color:  #27384c;
     margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    color: white;
+    font-size: 11.6pt;
 
 }
 
 li{
-    margin-left: 70px;
+    margin-left: 55px;
     margin-top: 10px;
+   font-size: 12.6pt;
 }
 
 h2{
     text-align: center;
 }
 
-/* p{
-  border: 4px solid green;
-  margin-top: 5px;
-  padding: 7px 20px;
-} */
 
+
+p{
+    display: inline-block;
+    font-size: 9.9pt;
+    
+}
 .contact{
-  padding-left: 10%;
+  padding-left: 2%;
   display: flex;
   flex-direction: column;
+  /* margin-top: -90px; */
+}
+
+.contacting{
+    display: flex;
+    align-items: center;
+    
 }
 
 span{
-    margin-right: 10px;
-    margin-bottom: 5px;
-    width: 31px;
-    height: 31px;
-    font-size: 21px;
-    border-radius: 50%;
-    background-color: yellowgreen;
-    display: inline-block;
-    padding: 2%;
+    
+    margin: 7px 13px  0px 0px;
    
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    border-radius: 50%;
+    background-color: #27384c;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+
+}
+
+.list-box{
+    height: 140px;
+}
+
+
+.right-side{
+    padding-right:14%;
+    padding-left: 3.5%;
+    padding-top: 5%;
+    z-index: 2;
+}
+
+.right-side .titles{
+    text-align: center;
+    background-color:  #27384c;
+    margin-bottom: 20px;
+    width: 90%;
+    color: white;
+    font-size: 11.6pt;
+
+}
+
+
+.nameDiv{
+  padding-top: 35px;
+
+}
+
+.Name{
+    font-family: 'Now';
 }
 
 
 
 
-/*
- display: inline-flex;
-    margin: 0 -15px 5px 0;
-*/
+
+.experience > * , .education > *{
+    display: block;
+    /* margin: 20px 0; */
+}
+
+.experience-div ,.education-div{
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 50;
+    padding: 5px;
+}
+h3{
+    width: 150px;
+    font-size: 10.5pt;
+}
+
+.education p, .experience p{
+    padding-top: 6px;
+}
+
+.skills-elements{
+    display: grid;
+    grid-template-rows: 35px;
+    margin-top: -10px;
+}
+.skills-div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.progress-bar-outer1, .progress-bar-outer2{
+    background-color: grey;
+    border-radius: 20px;
+    height: 8px;
+    width: 90px;
+    display: flex;
+    position: absolute;
+    left: 200px;
+    
+}
+
+.progress-bar-done1, .progress-bar-done2{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   background-color: #27384c;
+   height: 100%;
+   width:0;
+   transition: 1s ease 0.3s;
+  position: relative;
+}
+
+.progress-input1, .progress-input2{
+    width: 30px;
+    display: inline-block;
+    border-color: black;
+    position: absolute;
+    right: -50px;
+    top:-5px;
+    border-color: transparent;
+}
+
+.percentage{
+    display: inline-block;
+    position: absolute;
+    right: -65px;
+    top:-5px;
+}
+
