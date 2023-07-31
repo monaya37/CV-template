@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Now';
-    src: url(font/Now-Light.otf) format(otf);
+    font-family: 'NowBold';
+    src: url(font/Now/Now-Black.otf) format("opentype");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: rgb(156, 155, 155);
     font-family: 'Montserrat-light';
 }
 
@@ -28,6 +28,9 @@ body {
     grid-template-columns: 40% 60%;
     overflow: hidden;
     position: relative;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    box-shadow:2px 2px 6px 1px #424242;
 }
 
 .left-side {
@@ -54,9 +57,9 @@ body {
     height: 250px;
     border: 4px solid #27384c;
     border-radius: 50%;
-    background-image: url("ProfilePic.png");
+    background-image: url("pics/guy-with-suit.png");
     background-position: center top;
-    background-size: 100%;
+    background-size: 250%;
     z-index: 1;
     box-shadow: 0 0 0 10px white;
     margin-top: 23%;
@@ -130,7 +133,8 @@ span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;
+    padding: 6px;
+    color: #fff;
 }
 
 .list-box {
@@ -153,7 +157,8 @@ span {
     width: 90px;
     border-top-left-radius: 90px;
     border-bottom-left-radius: 90px;
-    background-color: lightblue;
+    background-color:#27384c;
+     /* rgb(191 194 248); */
 }
 
 .right-side .titles {
@@ -170,7 +175,9 @@ span {
 }
 
 .Name {
-    font-family: 'Now';
+    font-family: 'NowBold';
+    color:#27384c;
+    font-size: 42.4pt;
 }
 
 .experience>*,
@@ -207,12 +214,13 @@ h3 {
     width: 80px;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
-    background-color: lightblue;
+    background-color:#27384c;
+     /* rgb(171, 175, 231); */
 }
 
 .skills-elements {
     display: grid;
-    grid-template-rows: 35px;
+    grid-template-rows: 40px;
     margin-top: -10px;
 }
 
@@ -256,13 +264,17 @@ h3 {
     right: -50px;
     top: -5px;
     border-color: transparent;
+    color: #27384c;
+    font-size: 14.3pt;
 }
 
 .percentage {
     display: inline-block;
     position: absolute;
-    right: -65px;
+    right: -60px;
     top: -5px;
+    color: #27384c;
+    font-size: 14.3pt;
 }
 
 .semi-circle3 {
@@ -270,8 +282,9 @@ h3 {
     position: absolute;
     bottom: 0px; 
     right:0;
-    height:180px;
-    width: 180px;
+    height:100px;
+    width: 100px;
     border-top-left-radius: 100%;
-    background-color: lightblue;
+    background-color:#27384c;
+     /* rgb(171, 175, 231); */
 }
