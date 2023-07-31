@@ -158,7 +158,6 @@ span {
     border-top-left-radius: 90px;
     border-bottom-left-radius: 90px;
     background-color:#27384c;
-     /* rgb(191 194 248); */
 }
 
 .right-side .titles {
@@ -215,7 +214,6 @@ h3 {
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
     background-color:#27384c;
-     /* rgb(171, 175, 231); */
 }
 
 .skills-elements {
@@ -239,7 +237,6 @@ h3 {
     display: flex;
     position: absolute;
     left: 200px;
-
 }
 
 .progress-bar-done1,
@@ -286,5 +283,4 @@ h3 {
     width: 100px;
     border-top-left-radius: 100%;
     background-color:#27384c;
-     /* rgb(171, 175, 231); */
 }
